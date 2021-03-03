@@ -39,7 +39,7 @@ pipeline {
                     def dockerImgVersion = ex_retrieveAppVersion()
                     // Build Docker image
                     sh """#!/bin/bash -xe
-                        docker build -f Dockerfile -t linz-docker.jfrog.io/pdfy:${dockerImgVersion} .
+                        docker build -f Dockerfile -t pdfy:${dockerImgVersion} .
                     """
                 }
             }
