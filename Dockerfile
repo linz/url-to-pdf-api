@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM linz-docker.jfrog.io/node:14-alpine
 
 WORKDIR /usr/src/app
 
